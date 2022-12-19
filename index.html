@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>My Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+
+
+ 
+ <div class="header">
+  <header>
+    <p></p>
+    <div class="dropdown">
+      <button id="myBtn" class="dropbtn">MENU</button>
+      <div id="myDropdown" class="dropdown-content">
+  
+        <a href="menu.html">Menus</a>
+    
+      </div>
+    </div>
+    </header>
+  </div>
+
+    
+
+    
+<main>
+
+
+
+
+
+  <div class="header">
+    <div class="bgimg-1">
+      <div class="caption">
+      <span class="border">RAKUS TASTY RESTAURANT</span>
+      </div>
+    </div>
+    
+    <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+      <h1 style="text-align:center;">A B O U T</h1>
+      <p style="text-align: center;" >RAKUS Tasty offers seasonally inspired menus featuring the highest quality seafood and meats available from the local Gulf coast and beyond. Our full raw bar features several different varieties of oysters and rare delicacies such as and O-toro fatty tuna, Uni, Imperial Golden Ossetra caviar, soft shell crab, and local stone crab claws when available. There is something for every diner — from a traditional dining experience with simply prepared fish to a multi-course experience of shareable small plates. One of the best Happy Hour destinations in town; Tuesday -Friday from 4:00p.m to 6:00p.m. and Bivalves & Bubbles from 4:00p.m-5:00p.m. on Saturday’s
+        </p>
+    </div>
+    
+    <div class="bgimg-2">
+      <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="background-color:rgba(200, 198, 198, 0.735);text-align:center;padding:50px 80px;text-align: justify;">
+    <button id="button">
+            <h2><span style="font-family:BLA;">MOHAMAD FARIZAL BIN MOHD HAFIZ,</span>
+              <span style='font-family:Lucida Handwriting', cursive;>General Manager</span></h2>
+            </button>
+            
+            <p id="paragraph" style="display: none;">Graduate of the University of Houston in business marketing, Adrian got the hospitality bug early in his career. As a Houston hospitality industry veteran with 28 plus years’ experience, he has worked with some of the most respected restaurateurs in the city. Experienced and knowledgeable as the wine buyer for 1751, Adrian enjoys finding unique wine varietals and wineries from around the world at a price point that makes it easy for everyone to enjoy their favorite bottle. Ask Adrian for that superb glass or great bottle to enjoy with your meal..</p>
+      </div>
+    </div>
+    
+    <div class="bgimg-3">
+      <div class="caption">
+      <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"></span>
+      </div>
+    </div>
+    
+    <div style="position:relative;">
+      <div style="background-color:rgb(200, 198, 198, 0.735);text-align:center;padding:50px 80px;text-align: justify;">
+      <button id="button2">
+            <h2><span style="font-family:BLA;">OSMAN YOUNG,</span>
+              <span style='font-family:Lucida Handwriting', cursive;>Executive Chef</span></h2>
+            </button>
+            
+            <p id="paragraph2" style="display: none;">After attending Culinary Institute of America, Young was in Denver at steakhouse Guard & Grace before heading to San Francisco to work at the acclaimed one-star Michael Mina. He then headed to Chicago where he was at Michelin three-star restaurant, Alinea. Young has been in Houston since 2019 where he has spent time at both Guard & Grace and most recently at Sixty Vines. Young brings more than 7 years of experience at Michelin star and fine dining restaurants.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  </main>
+ 
+    
+  
+
+  <script>
+
+
+
+
+document.getElementById("myBtn").onclick = function() {myFunction()};
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+    var button = document.getElementById("button");
+    var text = document.getElementById("button");
+    var button2 = document.getElementById("button2");
+    var text2 = document.getElementById("button2");
+    var paragraph = document.getElementById("paragraph");
+    var paragraph2 = document.getElementById("paragraph2");
+    var isOn = false;
+  
+    button.addEventListener("click", function() {
+      if (isOn) {
+        button.removeEventListener("click", toggleParagraph);
+        paragraph.style.display = "none";
+        isOn = false;
+      } else {
+        button.addEventListener("click", toggleParagraph);
+        paragraph.style.display = "block";
+        isOn = true;
+      }
+    });
+  
+    function toggleParagraph() {
+      if (paragraph.style.display === "block") {
+        paragraph.style.display = "none";
+      } else {
+        paragraph.style.display = "block";
+      }
+    }
+
+    text.addEventListener("mouseover", function() {
+    text.style.color = "gold";
+  });
+
+  text.addEventListener("mouseout", function() {
+    text.style.color = "black";
+  });
+    
+    button2.addEventListener("click", function() {
+      if (isOn) {
+        button2.removeEventListener("click", toggleParagraph);
+        paragraph2.style.display = "none";
+        isOn = false;
+      } else {
+        button2.addEventListener("click", toggleParagraph);
+        paragraph2.style.display = "block";
+        isOn = true;
+      }
+    });
+  
+    function toggleParagraph() {
+      if (paragraph2.style.display === "block") {
+        paragraph2.style.display = "none";
+      } else {
+        paragraph2.style.display = "block";
+      }
+    }
+
+    text2.addEventListener("mouseover", function() {
+    text2.style.color = "gold";
+  });
+
+  text2.addEventListener("mouseout", function() {
+    text2.style.color = "black";
+  });
+  </script>
+  
+
+</body>
+</html>
